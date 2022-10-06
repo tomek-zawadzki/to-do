@@ -15,21 +15,53 @@
       </header>
       <div class="app">
         <h2 class="app__label">Create task</h2>
-        <input
-          class="app__task"
-          type="text"
-          id="task"
-          required
-          minlength="3"
-          maxlength="50"
-          size="50"
-        />
-        <button class="app__btn--add">+</button>
+        <div>
+          <input
+            class="app__task"
+            type="text"
+            id="task"
+            required
+            minlength="3"
+            maxlength="50"
+            size="50"
+          />
+          <button class="app__btn--add">+</button>
+        </div>
         <h2 class="app__label">Tasks to do:</h2>
-        <li class="app__list-todo">Do something</li>
-        <button class="app__btn--remove">-</button>
+        <ul class="app__list">
+          <li class="app__list-todo">
+            Do something
+            <div>
+              <button class="app__btn--approve">✅</button>
+              <button class="app__btn--remove">🗑</button>
+            </div>
+          </li>
+          <li class="app__list-todo">
+            Do something
+            <div>
+              <button class="app__btn--approve">✅</button>
+              <button class="app__btn--remove">🗑</button>
+            </div>
+          </li>
+          <li class="app__list-todo">
+            Do something
+            <div>
+              <button class="app__btn--approve">✅</button>
+              <button class="app__btn--remove">🗑</button>
+            </div>
+          </li>
+          <li class="app__list-todo">
+            Do something
+            <div>
+              <button class="app__btn--approve">✅</button>
+              <button class="app__btn--remove">🗑</button>
+            </div>
+          </li>
+        </ul>
         <h2 class="app__label">Tasks complited</h2>
-        <li class="app__list--complited">Do something</li>
+        <ul class="app__list">
+          <li class="app__list--complited">Do something</li>
+        </ul>
         <button class="app__btn--clear">CLEAR</button>
       </div>
     </main>
