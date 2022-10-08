@@ -12,15 +12,21 @@ btnAdd.addEventListener("click", () => {
     taskToDo.insertAdjacentHTML(
       "afterend",
       `
-<li class="app__list-todo">
-${text.value}
-<div>
-  <button class="app__btn--approve">✅</button>
-  <button class="app__btn--remove">🗑</button>
-  </div>
-  `
+  <li class="app__list-todo">
+  ${text.value}
+  <div>
+    <button class="app__btn--approve">✅</button>
+    <button class="app__btn--remove">🗑</button>
+    </div>
+    `
     );
 
     text.value = "";
+  } else {
+    alert("Field 'Create task' cannot be empty");
   }
 });
+
+// const newLi = document.createElement("li");
+// newLi.textContent = `${text.value}`;
+// newLi.setAttribute("class", "app__list-todo");
