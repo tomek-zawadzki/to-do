@@ -13,21 +13,27 @@ main {
 }
 
 .app__list {
-    padding: 0;
+  padding: 0;
 }
 
-.app__list-todo, .app__list--complited {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin-bottom: 8px;
-    border: 1px solid #000;
-    border-radius: 4px;
-    padding-left: 16px;
-    padding-right: 12px;
+.app__list-todo,
+.app__list--complited {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-bottom: 8px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-right: 12px;
 }
 
-.app__btn--remove, .app__btn--approve {
-    border: none;
-    background-color: #fff;
+.hidden {
+  display: none;
+}
+
+.app__btn--remove,
+.app__btn--approve {
+  border: none;
+  background-color: #fff;
 }
