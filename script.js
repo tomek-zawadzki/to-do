@@ -29,8 +29,8 @@ btnAdd.addEventListener("click", () => {
   }
 
   const btnRemove = document.querySelector(".app__btn--remove");
-  btnRemove.addEventListener("click", () => { 
-    console.log(html)
+  btnRemove.addEventListener("click", (e) => {
+    e.target.parentElement.parentElement.remove();
   });
 
   const btnApprove = document.querySelector(".app__btn--approve");
